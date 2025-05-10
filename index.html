@@ -8,8 +8,11 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./Styles/style.css">
 
+    
+
     <!-- Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
@@ -20,12 +23,95 @@
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FF4240",
+                        title: "#131318",
+                        description: "#131318",
+                        whiteColor: "#FFFFFF",
+                    },
+                    screens: {
+                        xs: "320px",
+                        sm: "480px",
+                        md: "768px",
+                        lg: "1024px",
+                        xl: "1280px",
+                        xxl: "1440px",
+                    },
+                    fontWeight: {
+                        thin: '100',
+                        hairline: '100',
+                        extraLight: '200',
+                        light: '300',
+                        normal: '400',
+                        medium: '500',
+                        semiBold: '600',
+                        bold: '700',
+                        extraBold: '800',
+                        black: '900',
+                    },
+                    fontSize: {
+                        title: "2.25rem",
+                        semiTitle: "1.25rem",
+                        descripSize: "1rem",
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
 <body>
 
     <!-- Header -->
-    <header class="header-section"></header>
+    <header class="header-section md:container md:mx-auto">
+
+        <!-- Navbar -->
+        <div class="navbar bg-base-100">
+            <!-- navbar start -->
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a class="text-primary font-bold text-descripSize" href="#">Home</a></li>
+                        <li><a class="text-descripSize" href="#">About</a></li>
+                        <li><a class="text-descripSize" href="#">Pages</a></li>
+                        <li><a class="text-descripSize" href="#">Blog</a></li>
+                        <li><a class="text-descripSize" href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-xl font-extraBold md:text-title">Hockey<span class="logo-semicolon xs:text-primary">'</span>s</a>
+            </div>
+
+            <!-- navbar center -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-primary font-bold text-descripSize" href="#">Home</a></li>
+                    <li><a class="text-descripSize" href="#">About</a></li>
+                    <li><a class="text-descripSize" href="#">Pages</a></li>
+                    <li><a class="text-descripSize" href="#">Blog</a></li>
+                    <li><a class="text-descripSize" href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- navbar end -->
+            <div class="navbar-end sm:flex sm:gap-6">
+                <i class="fa-solid fa-magnifying-glass hidden sm:block"></i>
+                <a class="btn xs:text-descripSize sm:text-semiTitle text-whiteColor bg-primary">Get Ticket</a>
+            </div>
+        </div>
+
+    </header>
 
     <!-- Main -->
     <main class="main-section"></main>

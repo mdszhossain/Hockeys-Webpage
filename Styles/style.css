@@ -1,2 +1,13 @@
 /* Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+/* Universal Styles */
+* {
+    font-family: Manrope;
+}
+
+/* Custom Styles */
+.menu a:active {
+    background-color: #FF4240;
+    color: white;
+}
