@@ -56,9 +56,17 @@
                         black: '900',
                     },
                     fontSize: {
-                        title: "2.25rem",
+                        Title: "2.25rem",
                         semiTitle: "1.25rem",
+                        mediumTitle: "1.75rem",
+                        semiMediumTitle: "1.5rem",
                         descripSize: "1rem",
+
+                        // Phone
+                        phontTitle: "1.375rem",
+                        phoneOterTitle: "1.25rem",
+                        phoneSmallOtherTitle: "1.125rem",
+                        phoneDescription: "0.875rem",
                     }
                 }
             }
@@ -72,7 +80,7 @@
     <header class="header-section md:container md:mx-auto">
 
         <!-- Navbar -->
-        <div class="navbar bg-base-100">
+        <div class="navbar bg-base-100 lg:mt-10">
             <!-- navbar start -->
             <div class="navbar-start">
                 <div class="dropdown">
@@ -90,7 +98,7 @@
                         <li><a class="text-descripSize" href="#">Contact</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-xl font-extraBold md:text-title">Hockey<span class="logo-semicolon xs:text-primary">'</span>s</a>
+                <a class="btn btn-ghost text-xl font-extraBold md:text-Title">Hockey<span class="logo-semicolon xs:text-primary">'</span>s</a>
             </div>
 
             <!-- navbar center -->
@@ -108,6 +116,60 @@
             <div class="navbar-end sm:flex sm:gap-6">
                 <i class="fa-solid fa-magnifying-glass hidden sm:block"></i>
                 <a class="btn xs:text-descripSize sm:text-semiTitle text-whiteColor bg-primary">Get Ticket</a>
+            </div>
+        </div>
+
+        <!-- Hero -->
+        <section class="hero mt-10 px-2">
+
+            <!-- Slider -->
+            <div class="carousel w-full xs:rounded-lg md:rounded-3xl">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="./assets/images/1.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="./assets/images/1.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="./assets/images/1.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="./assets/images/1.png" class="w-full" />
+                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="hero-topup-container px-2 relative xs:hidden md:bottom-37 md:left-75 md:w-7/12 md:block lg:bottom-45 lg:left-120 lg:w-6/12 xl:left-155 xxl:w-6/12 xxl:bottom-56">
+            <div class="hero-topup-section bg-title text-white px-1 py-3 mt-4 xs:text-center xs:rounded-lg sm:p-5">
+                <h4 class="xs:text-phoneSmallOtherTitle lg:text-semiMediumTitle font-bold">Meet all the heroes from the field
+                </h4>
+                <p class="mt-3 xs:text-phoneDescription lg:text-descripSize">Dit amet consectetur. Condimentum dignissim
+                    adipiscing aliquam turpis
+                    placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+        </div>
+
+        <div class="hero-topup-container px-2 md:hidden">
+            <div class="hero-topup-section bg-title text-white px-1 py-3 mt-4 xs:text-center xs:rounded-lg sm:p-5">
+                <h4 class="xs:text-phoneSmallOtherTitle md:text-semiMediumTitle font-bold">Meet all the heroes from the field</h4>
+                <p class="mt-3 xs:text-phoneDescription md:text-descripSize">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                    placerat dolor. Purus urna in sit nullam proin.</p>
             </div>
         </div>
 
