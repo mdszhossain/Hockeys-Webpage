@@ -15,3 +15,6 @@
     background-color: black;
     color: white;
 }
+.horizontal-line {
+    border-top: 1px dashed #131318;
+}
