@@ -18,3 +18,15 @@
 .horizontal-line {
     border-top: 1px dashed #131318;
 }
+.Card {
+    background-size: cover;
+}
+.card1 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8)), url('/assets/images/2.png');
+}
+.card2 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8)), url('/assets/images/3.png');
+}
+.card3 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), transparent, rgba(0, 0, 0, 0.8)), url('/assets/images/4.png');
+}
