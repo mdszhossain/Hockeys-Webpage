@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,15 +11,11 @@
     
 
     <!-- Tailwind CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
     <!-- DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- DaisyUI Theme -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -438,6 +434,55 @@
                 </div>
             </div>
 
+        </section>
+
+        <!-- Question Section -->
+        <h2 class="client-question xs:text-phoneTitle text-center font-extrabold mt-16">Client Questions</h2>
+
+        <!-- FAQ section -->
+        <section class="faq mt-16 border-2 border-[#1313181A] w-11/12 mx-auto rounded-2xl md:flex md:items-center md:gap-10 md:p-5 xl:justify-evenly">
+            <!-- part1 -->
+            <section class="small-screen-img faq-image h-64 w-11/12 rounded-2xl mt-3 bg-[url('./assets/images/11.png')] bg-cover bg-no-repeat bg-center mx-auto md:hidden">
+
+            </section>
+
+            <img class="md:w-5/12 lg:w-4/12 xl:w-3/12 xs:hidden md:block" src="./assets/images/11.png" alt="">
+
+            <!-- part2 -->
+            <section class="faq-question xs:mt-10 md:mt-0 md:flex md:items-center">
+                <div class="faq-question-part">
+                    <div class="collapse collapse-plus bg-base-100">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title font-semibold">Our Equipment</div>
+                        <div class="collapse-content text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
+                            sagittis turpis in magna.</div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-100">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">Hockey Training</div>
+                        <div class="collapse-content text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
+                            sagittis turpis in magna.</div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-100">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">Private Lesson</div>
+                        <div class="collapse-content text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
+                            sagittis turpis in magna.</div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-100">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">Ski Touring</div>
+                        <div class="collapse-content text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
+                            sagittis turpis in magna.</div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-100">
+                        <input type="radio" name="my-accordion-3" />
+                        <div class="collapse-title font-semibold">Booking</div>
+                        <div class="collapse-content text-sm">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit enim
+                            sagittis turpis in magna.</div>
+                    </div>
+                </div>
+            </section>
         </section>
 
     </main>
